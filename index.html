@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1400667957768581'); // Votre ID Pixel ici
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1" // Votre ID Pixel ici
+    /></noscript>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script> <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NZDBJMMCWT'); // Votre ID GA4 ici
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accès à Votre Contenu - Guide Ultime Immigration Canada</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        /* Styles globaux et resets (repris de) */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; margin: 0; background-color: #f8f8f8; color: #333; overflow-x: hidden; font-size: 19px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+        /* En-tête (repris de) */
+        .site-header { background-color: #ffffff; padding: 15px 0; border-bottom: 1px solid #e0e0e0; }
+        .site-header .container { display: flex; justify-content: center; align-items: center; }
+        .site-logo img { height: 50px; width: auto; max-width: 100%; display: block; }
+
+        /* Section Accès au Guide (styles repris de) */
+        .access-section { background-color: #ffffff; padding: 60px 0; text-align: center; }
+         /* Première section accès avec padding supérieur ajusté */
+         .access-section.first-access { padding-top: 80px; } /* Ajouté */
+        .access-section h2 { font-size: 30px; color: #003366; margin-bottom: 30px; position: relative; display: inline-block; }
+        .access-section h2::after { content: ''; display: block; width: 80px; height: 4px; background-color: #0056b3; margin: 10px auto 0; border-radius: 2px; }
+        .access-section p { font-size: 19px; color: #555; margin-bottom: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .download-button { display: inline-block; background-color: #007bff; color: white; font-size: 22px; font-weight: 600; padding: 15px 30px; border-radius: 5px; text-decoration: none; margin-top: 20px; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .download-button:hover { background-color: #0056b3; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+        .download-button i { margin-right: 10px; }
+
+        /* Section Bonus (styles et structure repris de) */
+        .bonus-button { display: inline-block; background-color: #555; color: white; font-size: 18px; font-weight: 600; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 10px; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .bonus-button:hover { background-color: #333; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+        .bonus-button i { margin-right: 8px; }
+        .bonus-info-section { background-color: #fff9c4; padding: 60px 0; text-align: center; }
+        .bonus-info-section h2 { font-size: 30px; color: #fbc02d; margin-bottom: 30px; position: relative; display: inline-block; }
+        .bonus-info-section h2::after { content: ''; display: block; width: 80px; height: 4px; background-color: #fbc02d; margin: 10px auto 0; border-radius: 2px; }
+        .bonus-info-section .bonus-note { font-size: 19px; color: #555; margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .bonus-info-section p { font-size: 19px; color: #555; margin-bottom: 15px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .bonus-links-container { margin-top: 20px; }
+
+        /* Section Support (styles et structure repris de) */
+        .support-section { background-color: #e3f2fd; padding: 60px 0; text-align: center; }
+        .support-section h2 { font-size: 30px; color: #0288d1; margin-bottom: 30px; position: relative; display: inline-block; }
+        .support-section h2::after { content: ''; display: block; width: 80px; height: 4px; background-color: #0288d1; margin: 10px auto 0; border-radius: 2px; }
+        .support-section p { font-size: 19px; color: #555; margin-bottom: 15px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .contact-links { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .contact-links a { display: inline-flex; align-items: center; font-size: 19px; font-weight: 600; text-decoration: none; padding: 10px 15px; border-radius: 5px; transition: opacity 0.3s ease; }
+        .contact-links a i { margin-right: 8px; font-size: 22px; }
+        .contact-links .email-link { color: #0056b3; border: 1px solid #0056b3; }
+        .contact-links .email-link:hover { opacity: 0.8; }
+        .contact-links .whatsapp-link { background-color: #25D366; color: white; }
+        .contact-links .whatsapp-link:hover { background-color: #1DA851; }
+
+        /* Pied de Page (repris de) */
+        footer { background-color: #212529; color: #adb5bd; padding: 40px 0; font-size: 15px; text-align: center; margin-top: 0; }
+        footer .container { display: flex; flex-direction: column; align-items: center; }
+        footer p { margin-bottom: 10px; }
+        .footer-links { margin-bottom: 10px; }
+        .footer-links a { color: #adb5bd; text-decoration: none; margin: 0 10px; transition: color 0.3s ease; }
+        .footer-links a:hover { color: #ffffff; }
+        footer .contact-info { font-size: 14px; color: #adb5bd; margin-top: 5px; }
+
+        /* Responsivité (repris de) */
+        @media (max-width: 768px) {
+            .access-section h2, .bonus-info-section h2, .support-section h2 { font-size: 26px; margin-bottom: 25px; }
+            .access-section h2::after, .bonus-info-section h2::after, .support-section h2::after { width: 60px; height: 3px; margin-top: 8px; }
+            .access-section p, .bonus-info-section p, .support-section p, .bonus-info-section .bonus-note { font-size: 17px; margin-bottom: 15px; }
+            .access-section, .bonus-info-section, .support-section { padding: 50px 0; }
+             .access-section.first-access { padding-top: 60px; } /* Ajusté */
+            .download-button { font-size: 20px; padding: 12px 25px; }
+            .download-button i { font-size: 20px; margin-right: 8px; }
+            .contact-links { flex-direction: column; gap: 10px; align-items: center; }
+            .contact-links a { font-size: 17px; padding: 8px 12px; }
+            .contact-links a i { font-size: 20px; margin-right: 6px; }
+            footer { padding: 30px 0; font-size: 14px; }
+        }
+         @media (max-width: 480px) {
+            .access-section h2, .bonus-info-section h2, .support-section h2 { font-size: 22px; margin-bottom: 20px; }
+            .access-section h2::after, .bonus-info-section h2::after, .support-section h2::after { width: 50px; height: 3px; margin-top: 6px; }
+            .access-section p, .bonus-info-section p, .support-section p, .bonus-info-section .bonus-note { font-size: 16px; margin-bottom: 10px; }
+            .access-section, .bonus-info-section, .support-section { padding: 40px 0; }
+             .access-section.first-access { padding-top: 50px; } /* Ajusté */
+            .download-button { font-size: 18px; padding: 10px 20px; }
+            .download-button i { font-size: 18px; margin-right: 6px; }
+             .contact-links a { font-size: 16px; padding: 6px 10px; }
+             .contact-links a i { font-size: 18px; margin-right: 5px; }
+             footer { padding: 25px 0; font-size: 13px; }
+             .footer-links { flex-direction: column; align-items: center; gap: 5px; margin-bottom: 10px; }
+         }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/67d37b8fe92b5_Monlogo.jpg" alt="Logo Cap Vers le Canada">
+            </div>
+        </div>
+    </header>
+
+    <section class="access-section first-access"> <div class="container" data-aos="fade-up">
+            <h2>Accédez à Votre Pack Ultime :</h2> <p>Votre <strong>Guide Ultime Pour Immigrer Au Canada | Édition 2025</strong> est prêt. Cliquez ci-dessous pour télécharger votre version PDF.</p>
+            <a href="https://u.pcloud.link/publink/show?code=XZOfJm5Z410jJKmTAfmBa9lh91AcvL2rtTIk" class="download-button" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-download"></i> Télécharger Mon Pack Ultime
+            </a>
+            <p style="margin-top: 20px; font-size: 15px; color: #777;">(Lien de téléchargement direct du fichier PDF)</p>
+        </div>
+    </section>
+
+    <section class="bonus-info-section">
+        <div class="container" data-aos="fade-up">
+            <h2>Vos Bonus Exclusifs :</h2> <p>Récupérez également vos bonus inclus dans le pack :</p>
+            <div class="bonus-links-container">
+                <a href="https://u.pcloud.link/publink/show?code=XZDBJm5ZqNXRSQEP1KH1Fwdmf4YVCbYYLisX" class="bonus-button" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-file-alt"></i> Télécharger Modèles CV + LM
+                </a>
+                <a href="https://t.me/+FaDQIFJbfBthZDI8" class="bonus-button" style="background-color: #007bff;" data-aos="zoom-in" data-aos-delay="300" target="_blank">
+                    <i class="fas fa-users"></i> Accéder au Groupe Privé
+                </a>
+                <a href="https://u.pcloud.link/publink/show?code=XZ8eJm5ZWSIyJi2cnKBnNSCOvo53g5peiJyV" class="bonus-button" style="background-color: #2e7d32;" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-book-reader"></i> Télécharger Guide Bonus
+                </a>
+            </div>
+            <p class="bonus-note">
+                <strong>Accès à Vie aux Mises à Jour :</strong> Vous recevrez automatiquement toutes les futures mises à jour importantes du guide par email. Aucune action requise!
+            </p>
+        </div>
+    </section>
+
+    <section class="support-section">
+        <div class="container" data-aos="fade-up">
+            <h2>Besoin d'Aide ou Une Question ?</h2>
+            <p>Si vous avez la moindre question concernant l'accès à votre contenu ou le téléchargement, notre équipe est là pour vous aider.</p>
+            <p style="font-size: 15px; color: #777;">(Pour les questions liées à l'accès au guide/bonus uniquement)</p>
+            <div class="contact-links">
+                <a href="mailto:capsverslecanada@gmail.com" class="contact-links email-link" data-aos="fade-right" data-aos-delay="200">
+                    <i class="fas fa-envelope"></i> Envoyer un Email
+                </a>
+                <a href="https://wa.me/15794001062?text=Bonjour%2C%20j%27ai%20une%20question%20concernant%20l%27acc%C3%A8s%20%C3%A0%20mon%20Guide%20Immigration%20Canada" class="contact-links whatsapp-link" target="_blank" data-aos="fade-left" data-aos-delay="200">
+                    <i class="fab fa-whatsapp"></i> Contacter par WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span>. Cap Vers le Canada. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Conditions Générales de Vente</a> |
+                <a href="#">Politique de Confidentialité</a> |
+                <a href="#">Mentions Légales</a>
+            </div>
+            <p class="contact-info">Email Support: capsverslecanada@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+     <script>
+      fbq('track', 'Purchase', {
+        content_name: 'Pack Ultime Immigration Canada 2025',
+        content_ids: ['pack_ultime_immigration_canada'],
+        content_type: 'product',
+        value: 8.42, // !!! METTEZ LA VALEUR REELLE !!!
+        currency: 'USD' // !!! METTEZ LA DEVISE REELLE !!!
+      });
+    </script>
+    <script>
+      gtag('event', 'purchase', {
+        transaction_id: 'TX-' + Date.now(), // Génère un ID simple
+        affiliation: 'Page Accès Contenu Guide Immigration', // Affiliation mise à jour
+        value: 8.42, // !!! METTEZ LA VALEUR REELLE !!!
+        currency: 'USD', // !!! METTEZ LA DEVISE REELLE !!!
+        tax: 0,
+        shipping: 0,
+        items: [{
+          item_id: 'PACK-ULTIME-CANADA-2025',
+          item_name: 'Pack Ultime Immigration Canada 2025',
+          quantity: 1,
+          price: 8.42 // !!! METTEZ LA VALEUR REELLE !!!
+        }]
+      });
+    </script>
+     </body>
+</html>
