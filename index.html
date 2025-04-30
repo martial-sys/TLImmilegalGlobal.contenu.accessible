@@ -10,7 +10,7 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1400667957768581'); // Votre ID Pixel ici
+    fbq('init', ''); // Votre ID Pixel ici
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
@@ -20,7 +20,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-NZDBJMMCWT'); // Votre ID GA4 ici
+      gtag('config', ''); // Votre ID GA4 ici
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -189,32 +189,6 @@
     <script>
         AOS.init({ duration: 800, once: true });
         document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-
-     <script>
-      fbq('track', 'Purchase', {
-        content_name: 'Pack Ultime Immigration Canada 2025',
-        content_ids: ['pack_ultime_immigration_canada'],
-        content_type: 'product',
-        value: 8.42, // !!! METTEZ LA VALEUR REELLE !!!
-        currency: 'USD' // !!! METTEZ LA DEVISE REELLE !!!
-      });
-    </script>
-    <script>
-      gtag('event', 'purchase', {
-        transaction_id: 'TX-' + Date.now(), // Génère un ID simple
-        affiliation: 'Page Accès Contenu Guide Immigration', // Affiliation mise à jour
-        value: 8.42, // !!! METTEZ LA VALEUR REELLE !!!
-        currency: 'USD', // !!! METTEZ LA DEVISE REELLE !!!
-        tax: 0,
-        shipping: 0,
-        items: [{
-          item_id: 'PACK-ULTIME-CANADA-2025',
-          item_name: 'Pack Ultime Immigration Canada 2025',
-          quantity: 1,
-          price: 8.42 // !!! METTEZ LA VALEUR REELLE !!!
-        }]
-      });
     </script>
      </body>
 </html>
