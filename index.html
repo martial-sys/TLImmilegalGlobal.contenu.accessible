@@ -2,141 +2,675 @@
 <html lang="fr">
 <head>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1" // Votre ID Pixel ici
+    src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
     /></noscript>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script> <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-NZDBJMMCWT'); // Votre ID GA4 ici
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accès à Votre Contenu - Guide Ultime Immigration Canada</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Accès Sécurisé à Votre Pack ImmiLégal Global</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <style>
-        /* Styles globaux et resets (repris de) */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Poppins', sans-serif; line-height: 1.6; margin: 0; background-color: #f8f8f8; color: #333; overflow-x: hidden; font-size: 19px; }
-        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        /* Styles globaux et resets (repris de la page de vente) */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
 
-        /* En-tête (repris de) */
-        .site-header { background-color: #ffffff; padding: 15px 0; border-bottom: 1px solid #e0e0e0; }
-        .site-header .container { display: flex; justify-content: center; align-items: center; }
-        .site-logo img { height: 50px; width: auto; max-width: 100%; display: block; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-        /* Section Accès au Guide (styles repris de) */
-        .access-section { background-color: #ffffff; padding: 60px 0; text-align: center; }
-         /* Première section accès avec padding supérieur ajusté */
-         .access-section.first-access { padding-top: 80px; } /* Ajouté */
-        .access-section h2 { font-size: 30px; color: #003366; margin-bottom: 30px; position: relative; display: inline-block; }
-        .access-section h2::after { content: ''; display: block; width: 80px; height: 4px; background-color: #0056b3; margin: 10px auto 0; border-radius: 2px; }
-        .access-section p { font-size: 19px; color: #555; margin-bottom: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .download-button { display: inline-block; background-color: #007bff; color: white; font-size: 22px; font-weight: 600; padding: 15px 30px; border-radius: 5px; text-decoration: none; margin-top: 20px; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .download-button:hover { background-color: #0056b3; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-        .download-button i { margin-right: 10px; }
+        body {
+            font-family: 'Inter', sans-serif; /* Nouvelle typographie : Inter */
+            line-height: 1.6;
+            background-color: #F1FAEE; /* Fond Gris Clair de la palette "Clarté et Horizon" */
+            color: #1D3557; /* Couleur de texte principale : Bleu Marine Profond */
+            font-size: 19px;
+        }
 
-        /* Section Bonus (styles et structure repris de) */
-        .bonus-button { display: inline-block; background-color: #555; color: white; font-size: 18px; font-weight: 600; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 10px; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .bonus-button:hover { background-color: #333; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
-        .bonus-button i { margin-right: 8px; }
-        .bonus-info-section { background-color: #fff9c4; padding: 60px 0; text-align: center; }
-        .bonus-info-section h2 { font-size: 30px; color: #fbc02d; margin-bottom: 30px; position: relative; display: inline-block; }
-        .bonus-info-section h2::after { content: ''; display: block; width: 80px; height: 4px; background-color: #fbc02d; margin: 10px auto 0; border-radius: 2px; }
-        .bonus-info-section .bonus-note { font-size: 19px; color: #555; margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .bonus-info-section p { font-size: 19px; color: #555; margin-bottom: 15px; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .bonus-links-container { margin-top: 20px; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-        /* Section Support (styles et structure repris de) */
-        .support-section { background-color: #e3f2fd; padding: 60px 0; text-align: center; }
-        .support-section h2 { font-size: 30px; color: #0288d1; margin-bottom: 30px; position: relative; display: inline-block; }
-        .support-section h2::after { content: ''; display: block; width: 80px; height: 4px; background-color: #0288d1; margin: 10px auto 0; border-radius: 2px; }
-        .support-section p { font-size: 19px; color: #555; margin-bottom: 15px; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .contact-links { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .contact-links a { display: inline-flex; align-items: center; font-size: 19px; font-weight: 600; text-decoration: none; padding: 10px 15px; border-radius: 5px; transition: opacity 0.3s ease; }
-        .contact-links a i { margin-right: 8px; font-size: 22px; }
-        .contact-links .email-link { color: #0056b3; border: 1px solid #0056b3; }
-        .contact-links .email-link:hover { opacity: 0.8; }
-        .contact-links .whatsapp-link { background-color: #25D366; color: white; }
-        .contact-links .whatsapp-link:hover { background-color: #1DA851; }
+        /* En-tête (repris de la page de vente) */
+        .site-header {
+            background-color: #ffffff;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
 
-        /* Pied de Page (repris de) */
-        footer { background-color: #212529; color: #adb5bd; padding: 40px 0; font-size: 15px; text-align: center; margin-top: 0; }
-        footer .container { display: flex; flex-direction: column; align-items: center; }
-        footer p { margin-bottom: 10px; }
-        .footer-links { margin-bottom: 10px; }
-        .footer-links a { color: #adb5bd; text-decoration: none; margin: 0 10px; transition: color 0.3s ease; }
-        .footer-links a:hover { color: #ffffff; }
-        footer .contact-info { font-size: 14px; color: #adb5bd; margin-top: 5px; }
+        .site-header .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-        /* Responsivité (repris de) */
+        .site-logo img {
+            height: 50px;
+            width: auto;
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Styles génériques pour les titres de section H2 */
+        section h2 {
+            font-size: 38px;
+            color: #1D3557; /* Bleu Marine Profond par défaut */
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        section h2::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+            background-color: #A8DADC; /* Bleu Ciel Clair pour la ligne */
+            margin: 15px auto 0;
+            border-radius: 3px;
+        }
+
+        p {
+            font-size: 19px;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            max-width: 700px; /* Limiter la largeur */
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center; /* Centrer les paragraphes */
+        }
+
+        strong {
+            color: #1D3557; /* Bleu Marine Profond pour le texte important */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Section Accès au Guide */
+        .access-section {
+            background-color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        /* Première section accès avec padding supérieur ajusté */
+        .access-section.first-access {
+            padding-top: 80px;
+        }
+
+        .access-section h2 {
+            font-size: 30px;
+            color: #1D3557; /* Bleu Marine Profond */
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .access-section h2::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #A8DADC; /* Bleu Ciel Clair */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #F4A261; /* Orange Doux (Accent de la palette) */
+            color: #1D3557; /* Texte en Bleu Marine Profond pour contraste */
+            font-size: 22px;
+            font-weight: 600;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .download-button:hover {
+            background-color: #E68A4C; /* Orange Doux légèrement plus foncé au survol */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .download-button i {
+            margin-right: 10px;
+        }
+
+        /* Section Bonus */
+        .bonus-info-section {
+            background-color: #F1FAEE; /* Gris Clair de la palette */
+            padding: 60px 0;
+            text-align: center;
+        }
+        .bonus-info-section h2 {
+            font-size: 30px;
+            color: #1D3557; /* Bleu Marine Profond */
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        .bonus-info-section h2::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #F4A261; /* Orange Doux */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .bonus-info-section .bonus-note {
+            font-size: 19px;
+            color: #555;
+            margin-top: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bonus-links-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .bonus-button {
+            display: inline-block;
+            background-color: #457B9D; /* Vert Menthe Doux */
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bonus-button:hover {
+            background-color: #315C77; /* Vert Menthe Doux plus foncé */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .bonus-button i {
+            margin-right: 8px;
+        }
+
+        /* Section Support */
+        .support-section {
+            background-color: #A8DADC; /* Bleu Ciel Clair de la palette */
+            padding: 60px 0;
+            text-align: center;
+        }
+        .support-section h2 {
+            font-size: 30px;
+            color: #1D3557; /* Bleu Marine Profond */
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        .support-section h2::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #1D3557; /* Bleu Marine Profond */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .support-section p {
+            font-size: 19px;
+            color: #333;
+            margin-bottom: 15px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            display: inline-flex;
+            align-items: center;
+            font-size: 19px;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+        }
+        .contact-links a i {
+            margin-right: 8px;
+            font-size: 22px;
+        }
+
+        .contact-links .email-link {
+            color: #1D3557; /* Bleu Marine Profond */
+            border: 1px solid #1D3557;
+        }
+        .contact-links .email-link:hover {
+            opacity: 0.8;
+        }
+
+        .contact-links .whatsapp-link {
+            background-color: #25D366; /* Vert WhatsApp */
+            color: white;
+        }
+        .contact-links .whatsapp-link:hover {
+            background-color: #1DA851; /* Vert plus foncé */
+        }
+
+        /* Pied de Page (repris de la page de vente et de remerciement) */
+        footer {
+            background-color: #1D3557; /* Fond Bleu Marine Profond */
+            color: #A8DADC; /* Texte Bleu Ciel Clair */
+            padding: 40px 0;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer .disclaimer-block,
+        footer .copyright-block,
+        footer .footer-links,
+        footer .contact-info {
+            width: 100%;
+            text-align: center;
+        }
+
+        footer .disclaimer-block {
+            font-size: 12px;
+            color: #adb5bd; /* Gris clair pour le disclaimer */
+            border-bottom: 1px solid #e9ecef; /* Ligne de séparation plus claire */
+            padding-bottom: 15px;
+            margin-bottom: 0;
+        }
+        /* Correction pour assurer la visibilité de "Information importante :" dans le disclaimer du pied de page */
+        footer .disclaimer-block p strong {
+            color: #FFFFFF !important; /* Blanc pur pour un contraste maximal et forcé */
+        }
+
+        footer .copyright-block {
+            font-size: 15px;
+            color: #A8DADC; /* Bleu Ciel Clair pour le copyright */
+            margin-bottom: 0;
+        }
+
+        footer .footer-links {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        footer .footer-links a {
+            color: #A8DADC; /* Bleu Ciel Clair pour les liens */
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            font-size: 15px;
+        }
+
+        footer .footer-links a:hover {
+            color: #ffffff; /* Blanc au survol */
+            text-decoration: underline;
+        }
+
+        footer .contact-info {
+            font-size: 15px;
+            color: #A8DADC; /* Bleu Ciel Clair pour le contact info */
+            margin-top: 0;
+        }
+        /* Correction pour assurer la visibilité de l'adresse email dans le pied de page */
+        footer .contact-info a {
+            color: #FFFFFF !important; /* Blanc pur pour un contraste maximal et forcé */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer .contact-info a:hover {
+            color: #A8DADC !important; /* Bleu Ciel Clair au survol pour un effet */
+            text-decoration: underline;
+        }
+
+        /* Responsivité (repris de la page de vente et de remerciement) */
         @media (max-width: 768px) {
+            body { font-size: 17px; }
+            .container { padding: 0 15px; }
+
+            .site-logo img {height: 40px;}
+
+            section h2 { font-size: 32px; margin-bottom: 25px; }
+            section h2::after {width: 80px; height: 4px; margin-top: 10px;}
+            p { font-size: 17px; margin-bottom: 15px; line-height: 1.7;}
+
             .access-section h2, .bonus-info-section h2, .support-section h2 { font-size: 26px; margin-bottom: 25px; }
             .access-section h2::after, .bonus-info-section h2::after, .support-section h2::after { width: 60px; height: 3px; margin-top: 8px; }
             .access-section p, .bonus-info-section p, .support-section p, .bonus-info-section .bonus-note { font-size: 17px; margin-bottom: 15px; }
-            .access-section, .bonus-info-section, .support-section { padding: 50px 0; }
-             .access-section.first-access { padding-top: 60px; } /* Ajusté */
-            .download-button { font-size: 20px; padding: 12px 25px; }
-            .download-button i { font-size: 20px; margin-right: 8px; }
-            .contact-links { flex-direction: column; gap: 10px; align-items: center; }
-            .contact-links a { font-size: 17px; padding: 8px 12px; }
+            .access-section, .bonus-info-section, .support-section {padding: 50px 0; }
+            .access-section.first-access {padding-top: 60px; }
+
+            .download-button {font-size: 20px; padding: 12px 25px; }
+            .download-button i {font-size: 20px; margin-right: 8px; }
+
+            .bonus-button {font-size: 17px; padding: 8px 15px; margin: 8px;}
+            .bonus-button i {font-size: 20px; margin-right: 6px; }
+
+            .contact-links {flex-direction: column; gap: 10px; align-items: center; }
+            .contact-links a {font-size: 17px; padding: 8px 12px; }
             .contact-links a i { font-size: 20px; margin-right: 6px; }
+
             footer { padding: 30px 0; font-size: 14px; }
+            footer p { margin-bottom: 8px; }
+            footer .footer-links a {margin: 0 8px; }
+            footer .footer-links {margin-bottom: 8px;}
+            footer .contact-info {font-size: 13px;}
         }
-         @media (max-width: 480px) {
-            .access-section h2, .bonus-info-section h2, .support-section h2 { font-size: 22px; margin-bottom: 20px; }
+        @media (max-width: 480px) {
+            body {font-size: 16px;}
+            .container { padding: 0 10px; }
+
+            .site-logo img {height: 35px;}
+
+            section h2 {font-size: 28px; margin-bottom: 20px; }
+            section h2::after { width: 50px; height: 3px; margin-top: 6px; }
+            p { font-size: 16px; margin-bottom: 10px; line-height: 1.6;}
+
+            .access-section h2, .bonus-info-section h2, .support-section h2 {font-size: 22px; margin-bottom: 20px; }
             .access-section h2::after, .bonus-info-section h2::after, .support-section h2::after { width: 50px; height: 3px; margin-top: 6px; }
             .access-section p, .bonus-info-section p, .support-section p, .bonus-info-section .bonus-note { font-size: 16px; margin-bottom: 10px; }
-            .access-section, .bonus-info-section, .support-section { padding: 40px 0; }
-             .access-section.first-access { padding-top: 50px; } /* Ajusté */
-            .download-button { font-size: 18px; padding: 10px 20px; }
+            .access-section, .bonus-info-section, .support-section {padding: 40px 0; }
+            .access-section.first-access {padding-top: 50px; }
+
+            .download-button {font-size: 18px; padding: 10px 20px; }
             .download-button i { font-size: 18px; margin-right: 6px; }
-             .contact-links a { font-size: 16px; padding: 6px 10px; }
-             .contact-links a i { font-size: 18px; margin-right: 5px; }
-             footer { padding: 25px 0; font-size: 13px; }
-             .footer-links { flex-direction: column; align-items: center; gap: 5px; margin-bottom: 10px; }
-         }
+
+            .bonus-button {font-size: 16px; padding: 6px 12px; margin: 6px;}
+            .bonus-button i {font-size: 18px; margin-right: 5px; }
+
+            .contact-links a {font-size: 16px; padding: 6px 10px; }
+            .contact-links a i {font-size: 18px; margin-right: 5px; }
+
+            footer { padding: 25px 0; font-size: 13px;}
+            footer p { margin-bottom: 6px;}
+            footer .footer-links {flex-direction: column; align-items: center; gap: 5px; margin-bottom: 10px;}
+            footer .footer-links a {margin: 0 5px;}
+            footer .contact-info {font-size: 12px;}
+        }
+        /* Correction pour assurer la visibilité de TOUT le contenu du disclaimer dans le pied de page */
+.new-footer .disclaimer-block p {
+    color: #FFFFFF !important; /* Texte des paragraphes en blanc pur pour un contraste maximal */
+}
+
+.new-footer .disclaimer-block p strong {
+    color: #FFFFFF !important; /* Assure que le texte en gras ("Information importante :") est aussi en blanc pur */
+}
+/* --- NOUVEAU STYLE DE PIED DE PAGE ALTERNATIF --- */
+/* Ce style propose une approche différente mais reste cohérent avec la palette "Clarté et Horizon" */
+
+footer {
+    background-color: #457B9D; /* Fond Vert Menthe Doux (couleur secondaire de la palette) */
+    color: #FFFFFF; /* Texte par défaut en Blanc pur pour un contraste maximal */
+    padding: 50px 0; /* Plus de padding pour un look aéré */
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Espacement entre les blocs du footer */
+}
+
+/* Bloc de disclaimer "Information importante" */
+footer .disclaimer-block {
+    font-size: 13px;
+    color: #F1FAEE; /* Gris Clair pour le texte du disclaimer, très lisible sur le vert menthe */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Ligne de séparation subtile */
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    max-width: 700px; /* Limiter la largeur pour une meilleure lisibilité */
+}
+/* Assurer que tout le texte du disclaimer est bien visible */
+footer .disclaimer-block p {
+    color: #F1FAEE !important; /* Force le texte des paragraphes en Gris Clair */
+    margin-bottom: 10px;
+}
+footer .disclaimer-block p strong {
+    color: #FFFFFF !important; /* Force le texte en gras ("Information importante :") en Blanc pur */
+}
+
+/* Bloc copyright */
+footer .copyright-block {
+    font-size: 16px;
+    color: #FFFFFF; /* Blanc pur pour le copyright */
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+/* Liens du footer (CGV, Confidentialité, Mentions Légales) */
+footer .footer-links {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex; /* Pour aligner les liens horizontalement */
+    flex-wrap: wrap; /* Permet aux liens de passer à la ligne sur mobile */
+    justify-content: center;
+    gap: 15px; /* Espacement entre les liens */
+}
+
+footer .footer-links a {
+    color: #A8DADC; /* Bleu Ciel Clair pour les liens, bon contraste */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-size: 16px;
+}
+
+footer .footer-links a:hover {
+    color: #FFFFFF; /* Blanc pur au survol */
+    text-decoration: underline;
+}
+
+/* Informations de contact */
+footer .contact-info {
+    font-size: 16px;
+    color: #FFFFFF; /* Blanc pur pour le texte "Support Client :" */
+    margin-top: 0;
+}
+/* Assurer que l'adresse email de contact est bien visible */
+footer .contact-info a {
+    color: #FFFFFF !important; /* Blanc pur pour l'email, forcé */
+    text-decoration: none;
+    font-weight: bold;
+}
+footer .contact-info a:hover {
+    color: #A8DADC !important; /* Bleu Ciel Clair au survol pour l'email */
+    text-decoration: underline;
+}
+
+
+/* --- RESPONSIVITÉ POUR CE NOUVEAU FOOTER --- */
+@media (min-width: 769px) {
+    footer .container {
+        flex-direction: row; /* En ligne sur les grands écrans */
+        justify-content: space-around; /* Répartir l'espace */
+        align-items: flex-start; /* Aligner en haut */
+        flex-wrap: wrap;
+    }
+
+    footer .disclaimer-block,
+    footer .copyright-block,
+    footer .footer-links,
+    footer .contact-info {
+        width: auto; /* Largeur automatique */
+        flex-grow: 1; /* Permet de prendre de l'espace */
+        text-align: left; /* Aligner le texte à gauche */
+        margin-bottom: 0; /* Réinitialiser la marge */
+    }
+
+    footer .disclaimer-block {
+        order: 1; /* Ordre d'affichage */
+        flex-basis: 100%; /* Prend toute la largeur en premier */
+    }
+
+    footer .copyright-block {
+        order: 2;
+        max-width: 250px; /* Limiter la largeur du copyright */
+    }
+
+    footer .footer-links {
+        order: 3;
+        flex-basis: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: flex-start; /* Aligner les liens à gauche */
+    }
+
+    footer .footer-links a {
+        display: block; /* Chaque lien sur sa propre ligne */
+        margin: 5px 0;
+    }
+
+    footer .contact-info {
+        order: 4;
+        max-width: 300px; /* Limiter la largeur du contact */
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 0;
+        font-size: 15px;
+    }
+    footer .container {
+        gap: 15px; /* Réduire l'espacement sur mobile */
+    }
+    footer .disclaimer-block {
+        padding-bottom: 15px;
+    }
+    footer .disclaimer-block p {
+        font-size: 14px;
+    }
+    footer .copyright-block {
+        font-size: 14px;
+    }
+    footer .footer-links a {
+        font-size: 14px;
+        margin: 0 5px; /* Réduire l'espacement entre les liens */
+    }
+    footer .contact-info {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 30px 0;
+        font-size: 14px;
+    }
+    footer .container {
+        gap: 10px;
+    }
+    footer .disclaimer-block p {
+        font-size: 13px;
+    }
+    footer .copyright-block {
+        font-size: 13px;
+    }
+    footer .footer-links a {
+        font-size: 13px;
+        margin: 0 3px;
+    }
+    footer .contact-info {
+        font-size: 13px;
+    }
+}
+
+
     </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NZDBJMMCWT'); // REMPLACEZ PAR VOTRE VRAI ID GA4 (celui de cette page spécifique)
+    </script>
 </head>
 <body>
-
     <header class="site-header">
         <div class="container">
             <div class="site-logo">
-                <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/67d37b8fe92b5_Monlogo.jpg" alt="Logo Cap Vers le Canada">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/68324adf2bedc_1002067342.webp" alt="Logo ImmiLégal Global">
             </div>
         </div>
     </header>
 
-    <section class="access-section first-access"> <div class="container" data-aos="fade-up">
-            <h2>Accédez à Votre Pack Ultime :</h2> <p>Votre <strong>Guide Ultime Pour Immigrer Au Canada | Édition 2025</strong> est prêt. Cliquez ci-dessous pour télécharger votre version PDF.</p>
+    <section class="access-section first-access">
+        <div class="container" data-aos="fade-up">
+            <h2>Accédez à Votre Pack Complet ImmiLégal Global :</h2>
+            <p>Félicitations pour votre investissement ! Votre <strong>Guide Complet Immigration Canada | Édition 2025</strong> est prêt. Cliquez ci-dessous pour télécharger votre version PDF et commencer à structurer votre projet.</p>
+
             <a href="https://u.pcloud.link/publink/show?code=XZOfJm5Z410jJKmTAfmBa9lh91AcvL2rtTIk" class="download-button" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fas fa-download"></i> Télécharger Mon Pack Ultime
+                <i class="fas fa-download"></i> Télécharger Mon Guide Complet
             </a>
-            <p style="margin-top: 20px; font-size: 15px; color: #777;">(Lien de téléchargement direct du fichier PDF)</p>
+            <p style="margin-top: 20px; font-size: 15px; color: #555;">(Ceci est le lien de téléchargement direct du fichier PDF du guide principal)</p>
         </div>
     </section>
 
-  <section class="bonus-info-section">
+    <section class="bonus-info-section">
         <div class="container" data-aos="fade-up">
-            <h2><i class="fas fa-gift" style="margin-right: 10px;"></i> Vos Bonus Exclusifs</h2>
-            <p>N'oubliez pas que votre Pack Ultime inclut ces ressources précieuses :</p>
+            <h2><i class="fas fa-gift" style="margin-right: 10px;"></i> Vos Bonus Exclusifs Sont Ici !</h2>
+            <p>Votre Pack Complet ImmiLégal Global inclut ces ressources précieuses pour maximiser vos chances et votre préparation :</p>
+
             <div class="bonus-links-container">
-                 <a href="https://u.pcloud.link/publink/show?code=XZDBJm5ZqNXRSQEP1KH1Fwdmf4YVCbYYLisX" class="bonus-button" data-aos="zoom-in" data-aos-delay="200" target="_blank">
+                <a href="https://u.pcloud.link/publink/show?code=XZDBJm5ZqNXRSQEP1KH1Fwdmf4YVCbYYLisX" class="bonus-button" data-aos="zoom-in" data-aos-delay="200" target="_blank">
                     <i class="fas fa-file-alt"></i> Modèles CV + LM
                 </a>
-                <a href="https://t.me/+FaDQIFJbfBthZD18" class="bonus-button" style="background-color: #007bff;" data-aos="zoom-in" data-aos-delay="300" target="_blank">
+                <a href="" class="bonus-button" data-aos="zoom-in" data-aos-delay="300" target="_blank">
                     <i class="fas fa-users"></i> Accéder au Groupe Privé
                 </a>
-                <a href="https://u.pcloud.link/publink/show?code=XZ8eJm5ZWSlyJi2cnKBnNSCOvo53g5peiJyV" class="bonus-button" style="background-color: #2e7d32;" data-aos="zoom-in" data-aos-delay="400" target="_blank">
-                    <i class="fas fa-book-reader"></i> Guide Bonus Précédent
+                <a href="https://u.pcloud.link/publink/show?code=XZ8eJm5ZWSlyJi2cnKBnNSCOvo53g5peiJyV" class="bonus-button" data-aos="zoom-in" data-aos-delay="400" target="_blank">
+                    <i class="fas fa-book-reader"></i> Guide Bonus Complémentaire
                 </a>
             </div>
+
             <p class="bonus-note">
-                <strong><i class="fas fa-sync-alt"></i> Accès aux Mises à Jour :</strong> Vous recevrez <strong>automatiquement par e-mail</strong> les liens vers les futures mises à jour majeures du Guide Ultime. Aucune action n'est requise de votre part !
+                <strong><i class="fas fa-sync-alt"></i> Accès aux Mises à Jour :</strong> Vous recevrez
+                <strong>automatiquement par e-mail</strong> les liens vers les futures mises à jour majeures du
+                Guide Complet. Aucune action n'est requise de votre part pour rester informé(e) !
             </p>
         </div>
     </section>
@@ -144,10 +678,12 @@
     <section class="support-section">
         <div class="container" data-aos="fade-up">
             <h2>Besoin d'Aide ou Une Question ?</h2>
-            <p>Si vous avez la moindre question concernant l'accès à votre contenu ou le téléchargement, notre équipe est là pour vous aider.</p>
-            <p style="font-size: 15px; color: #777;">(Pour les questions liées à l'accès au guide/bonus uniquement)</p>
+            <p>Si vous avez la moindre question concernant l'accès à votre contenu ou le téléchargement,
+            notre équipe est là pour vous aider.</p>
+            <p style="font-size: 15px; color: #555;">(Pour les questions liées à l'accès au guide/bonus uniquement. Nous ne fournissons pas de conseil personnalisé sur votre dossier d'immigration.)</p>
+
             <div class="contact-links">
-                <a href="mailto:Contact@capverslecanada.com" class="contact-links email-link" data-aos="fade-right" data-aos-delay="200">
+                <a href="mailto:immilegalglobal@gmail.com" class="contact-links email-link" data-aos="fade-right" data-aos-delay="200">
                     <i class="fas fa-envelope"></i> Envoyer un Email
                 </a>
             </div>
@@ -157,27 +693,177 @@
         <div class="container">
             <div class="disclaimer-block">
                 <p>
-                    <strong>Information importante :</strong>  Ce guide et son contenu sont la propriété intellectuelle de Cap Vers le Canada et sont protégés par les lois sur le droit d'auteur. Ce produit est destiné à un usage personnel et informatif
-
-uniquement. Toute reproduction, distribution, revente ou partage non autorisé, en totalité ou en partie, est strictement interdit et passible de poursuites. Les informations fournies sont basées sur les sources
-
-officielles publiques au moment de la publication mais
-
-ne constituent pas un conseil juridique ou d'immigration personnalisé et ne garantissent aucun résultat spécifique en matière d'immigration. Pour un avis sur votre situation personnelle, veuillez consulter un professionnel réglementé.</p>
+                    <strong>Information importante :</strong> Le Guide Complet Immigration Canada par ImmiLégal Global vous fournit des informations et des outils basés sur les sources officielles pour éclairer et structurer votre projet. Pour votre clarté, notez que ce guide n'offre pas de conseil personnalisé et ne peut garantir l'obtention d'un visa ou d'un emploi. Le succès de votre démarche dépend de nombreux facteurs et des autorités canadiennes.
+                </p>
+                <p style="margin-top: 5px;">
+                    Ce site et son contenu ne sont pas affiliés à Facebook, Instagram ou Meta Platforms Inc.
+                </p>
             </div>
-             <p class="copyright-block">&copy; <span id="current-year-footer"></span> Cap Vers le Canada. Tous droits réservés.</p>
+            <p class="copyright-block">&copy; <span id="current-year-footer"></span> ImmiLégal Global. Tous droits réservés.</p>
             <div class="footer-links">
-                <a href="#">Conditions Générales de Vente</a> |
-                <a href="#">Politique de Confidentialité</a> |
-                <a href="#">Mentions Légales</a>
+                <a href="https://conditions-g-n-rales-de-vente-cgv.onrender.com">Conditions Générales de Vente</a> |
+                <a href="https://politique-de-confidentialit.onrender.com">Politique de Confidentialité</a> |
+                <a href="https://mention-l-gale.onrender.com">Mentions Légales</a>
             </div>
-            <p class="contact-info">Support Client : <a href="mailto:contact@capverslecanada.com"><strong>contact@capverslecanada.com</strong></a></p>
+            <p class="contact-info">Support Client: <a href="mailto:immilegalglobal@gmail.com">
+                <strong>immilegalglobal@gmail.com</strong></a></p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 800, once: true });
-        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
-     </body>
+
+    <script>
+        // Met à jour l'année dans le footer
+        const yearSpanFooter = document.getElementById('current-year-footer');
+        if (yearSpanFooter) {
+            yearSpanFooter.textContent = new Date().getFullYear();
+        } else {
+            console.warn("Element with ID 'current-year-footer' not found. Check footer HTML ID.");
+        }
+
+        // Si tu as aussi un élément avec l'ID 'current-year', tu peux le mettre à jour ici aussi si besoin,
+        // mais idéalement n'aie qu'un seul élément pour l'année du footer.
+        const yearSpanGeneric = document.getElementById('current-year');
+        if (yearSpanGeneric && yearSpanGeneric !== yearSpanFooter) { // Évite de mettre à jour deux
+            yearSpanGeneric.textContent = new Date().getFullYear();
+        } else if (!yearSpanGeneric) {
+            console.warn("Element with ID 'current-year' not found.");
+        }
+    </script>
+    <script>
+        // Smooth scrolling pour les liens ancres (non utilisé sur cette page, mais gardé pour cohérence si besoin)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                try {
+                    const targetElement = document.querySelector(this.getAttribute('href'));
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        console.warn('Smooth scroll target not found for href:', this.getAttribute('href'));
+                    }
+                } catch (error) {
+                    console.error('Error during smooth scroll:', error);
+                }
+            });
+        });
+    </script>
+    <script>
+        if (typeof gtag === 'function') {
+            // --- 1. Suivi du défilement (Scroll Depth) AVEC sessionStorage ---
+            const scrollThresholds = [20, 40, 60, 80, 100]; // Paliers de défilement à suivre
+            window.addEventListener('scroll', () => {
+                const scrollableHeight = document.documentElement.scrollHeight -
+                    document.documentElement.clientHeight;
+                if (scrollableHeight <= 0) return;
+                const scrolled = window.scrollY;
+                const scrollPercentage = Math.round((scrolled / scrollableHeight) * 100);
+                scrollThresholds.forEach(threshold => {
+                    const flagName = `scroll_depth_${threshold}_sent`;
+                    // Vérifier si on a dépassé le seuil ET que l'événement n'a pas déjà été envoyé pour ce seuil
+                    // dans cette session
+                    if (scrollPercentage >= threshold && !sessionStorage.getItem(flagName)) {
+                        gtag('event', 'scroll_depth', {
+                            'event_category': 'Engagement',
+                            'event_label': `${threshold}%`
+                        });
+                        // Marquer comme envoyé pour cette session
+                        try {
+                            sessionStorage.setItem(flagName, 'true');
+                            // console.log(`Scroll depth ${threshold}% event sent and flagged.`);
+                        } catch (e) { console.error('Error setting sessionStorage for scroll depth:', e); }
+                    }
+                });
+            }, { passive: true }); // Utiliser un écouteur passif pour la performance
+
+            // --- 2. Suivi de la visibilité des sections clés AVEC sessionStorage ---
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const observerOptions = { root: null, rootMargin: '0px', threshold: 0.5 }; // Déclenche à 50% de
+                // visibilité
+                const sectionsToTrack = [ // Assurez-vous que ces ID existent sur vos sections HTML
+                    'access-section', 'bonus-info-section', 'support-section', 'footer'
+                ];
+                sectionsToTrack.forEach(sectionId => {
+                    const sectionElement = document.getElementById(sectionId);
+                    if (sectionElement) {
+                        const observer = new IntersectionObserver((entries, observerInstance) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    const flagName = `viewed_${sectionId}_sent`;
+                                    // Vérifier si la section n'a pas déjà été marquée comme vue dans cette session
+                                    if (!sessionStorage.getItem(flagName)) {
+                                        gtag('event', 'section_view', {
+                                            'event_category': 'Engagement',
+                                            'event_label': 'Viewed: ' + sectionId
+                                        });
+                                        // Marquer comme vue pour cette session
+                                        try {
+                                            sessionStorage.setItem(flagName, 'true');
+                                            // console.log(`Section view event for ${sectionId} sent and flagged.`);
+                                        } catch (e) { console.error(`Error setting sessionStorage for section view
+                                            ${sectionId}:`, e); }
+                                        // Optionnel : Arrêter d'observer après la première vue (même si flag échoue)
+                                        // pour économiser ressources
+                                        observerInstance.unobserve(entry.target);
+                                    } else {
+                                        // Si déjà vue dans la session, juste arrêter d'observer
+                                        observerInstance.unobserve(entry.target);
+                                    }
+                                }
+                            });
+                        }, observerOptions);
+                        observer.observe(sectionElement);
+                    } else {
+                        console.warn('Section Tracking: ID "' + sectionId + '" not found.');
+                    }
+                });
+                // --- 3. Suivi des clics (Pas de sessionStorage ici, car un clic est une action unique) ---
+                document.body.addEventListener('click', function(e) {
+                    // Clics sur les boutons de téléchargement
+                    if (e.target.matches('a.download-button')) {
+                        gtag('event', 'download_guide', {
+                            'event_category': 'Content Access',
+                            'event_label': 'Main Guide Download',
+                            'value': e.target.href
+                        });
+                    }
+                    // Clics sur les boutons de bonus
+                    else if (e.target.matches('a.bonus-button')) {
+                        let bonusLabel = e.target.textContent.trim();
+                        gtag('event', 'access_bonus', {
+                            'event_category': 'Content Access',
+                            'event_label': 'Bonus: ' + bonusLabel,
+                            'value': e.target.href
+                        });
+                    }
+                    // Clic sur les liens de contact (email/whatsapp)
+                    else if (e.target.matches('.contact-links a')) {
+                        let contactLabel = e.target.textContent.trim();
+                        gtag('event', 'contact_support_access_page', {
+                            'event_category': 'Support',
+                            'event_label': 'Contact Link: ' + contactLabel,
+                            'value': e.target.href
+                        });
+                    }
+                    // Clic sur les liens du Footer (excluant les liens vides '#')
+                    else if (e.target.matches('footer a') && e.target.getAttribute('href') &&
+                        e.target.getAttribute('href') !== '#') {
+                        gtag('event', 'clic_lien_footer_access_page', {
+                            'event_category': 'Navigation',
+                            'event_label': 'Footer Link Access Page: ' + e.target.textContent.trim(),
+                            'value': e.target.href
+                        });
+                    }
+                });
+            }); // Fin de DOMContentLoaded pour Observer et Clicks
+        } else {
+            console.error('GA4 gtag function not found. Ensure GA4 is loaded correctly in <head>.');
+        }
+    </script>
+</body>
 </html>
+
