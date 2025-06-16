@@ -619,15 +619,7 @@ footer .contact-info a:hover {
     }
 }
 
-
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-NZDBJMMCWT'); // REMPLACEZ PAR VOTRE VRAI ID GA4 (celui de cette page spécifique)
-    </script>
 </head>
 <body>
     <header class="site-header">
@@ -659,7 +651,7 @@ footer .contact-info a:hover {
                 <a href="https://u.pcloud.link/publink/show?code=XZDBJm5ZqNXRSQEP1KH1Fwdmf4YVCbYYLisX" class="bonus-button" data-aos="zoom-in" data-aos-delay="200" target="_blank">
                     <i class="fas fa-file-alt"></i> Modèles CV + LM
                 </a>
-                <a href="https://t.me/+FaDQIFJbfBthZDI8" class="bonus-button" data-aos="zoom-in" data-aos-delay="300" target="_blank">
+                <a href="https://t.me/+m-snwaUHKZo3MWFk" class="bonus-button" data-aos="zoom-in" data-aos-delay="300" target="_blank">
                     <i class="fas fa-users"></i> Accéder au Groupe Privé
                 </a>
                 <a href="https://u.pcloud.link/publink/show?code=XZ8eJm5ZWSIyJi2cnKBnNSCOvo53g5peiJyV" class="bonus-button" data-aos="zoom-in" data-aos-delay="400" target="_blank">
@@ -752,118 +744,6 @@ footer .contact-info a:hover {
             });
         });
     </script>
-    <script>
-        if (typeof gtag === 'function') {
-            // --- 1. Suivi du défilement (Scroll Depth) AVEC sessionStorage ---
-            const scrollThresholds = [20, 40, 60, 80, 100]; // Paliers de défilement à suivre
-            window.addEventListener('scroll', () => {
-                const scrollableHeight = document.documentElement.scrollHeight -
-                    document.documentElement.clientHeight;
-                if (scrollableHeight <= 0) return;
-                const scrolled = window.scrollY;
-                const scrollPercentage = Math.round((scrolled / scrollableHeight) * 100);
-                scrollThresholds.forEach(threshold => {
-                    const flagName = `scroll_depth_${threshold}_sent`;
-                    // Vérifier si on a dépassé le seuil ET que l'événement n'a pas déjà été envoyé pour ce seuil
-                    // dans cette session
-                    if (scrollPercentage >= threshold && !sessionStorage.getItem(flagName)) {
-                        gtag('event', 'scroll_depth', {
-                            'event_category': 'Engagement',
-                            'event_label': `${threshold}%`
-                        });
-                        // Marquer comme envoyé pour cette session
-                        try {
-                            sessionStorage.setItem(flagName, 'true');
-                            // console.log(`Scroll depth ${threshold}% event sent and flagged.`);
-                        } catch (e) { console.error('Error setting sessionStorage for scroll depth:', e); }
-                    }
-                });
-            }, { passive: true }); // Utiliser un écouteur passif pour la performance
-
-            // --- 2. Suivi de la visibilité des sections clés AVEC sessionStorage ---
-            document.addEventListener('DOMContentLoaded', (event) => {
-                const observerOptions = { root: null, rootMargin: '0px', threshold: 0.5 }; // Déclenche à 50% de
-                // visibilité
-                const sectionsToTrack = [ // Assurez-vous que ces ID existent sur vos sections HTML
-                    'access-section', 'bonus-info-section', 'support-section', 'footer'
-                ];
-                sectionsToTrack.forEach(sectionId => {
-                    const sectionElement = document.getElementById(sectionId);
-                    if (sectionElement) {
-                        const observer = new IntersectionObserver((entries, observerInstance) => {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
-                                    const flagName = `viewed_${sectionId}_sent`;
-                                    // Vérifier si la section n'a pas déjà été marquée comme vue dans cette session
-                                    if (!sessionStorage.getItem(flagName)) {
-                                        gtag('event', 'section_view', {
-                                            'event_category': 'Engagement',
-                                            'event_label': 'Viewed: ' + sectionId
-                                        });
-                                        // Marquer comme vue pour cette session
-                                        try {
-                                            sessionStorage.setItem(flagName, 'true');
-                                            // console.log(`Section view event for ${sectionId} sent and flagged.`);
-                                        } catch (e) { console.error(`Error setting sessionStorage for section view
-                                            ${sectionId}:`, e); }
-                                        // Optionnel : Arrêter d'observer après la première vue (même si flag échoue)
-                                        // pour économiser ressources
-                                        observerInstance.unobserve(entry.target);
-                                    } else {
-                                        // Si déjà vue dans la session, juste arrêter d'observer
-                                        observerInstance.unobserve(entry.target);
-                                    }
-                                }
-                            });
-                        }, observerOptions);
-                        observer.observe(sectionElement);
-                    } else {
-                        console.warn('Section Tracking: ID "' + sectionId + '" not found.');
-                    }
-                });
-                // --- 3. Suivi des clics (Pas de sessionStorage ici, car un clic est une action unique) ---
-                document.body.addEventListener('click', function(e) {
-                    // Clics sur les boutons de téléchargement
-                    if (e.target.matches('a.download-button')) {
-                        gtag('event', 'download_guide', {
-                            'event_category': 'Content Access',
-                            'event_label': 'Main Guide Download',
-                            'value': e.target.href
-                        });
-                    }
-                    // Clics sur les boutons de bonus
-                    else if (e.target.matches('a.bonus-button')) {
-                        let bonusLabel = e.target.textContent.trim();
-                        gtag('event', 'access_bonus', {
-                            'event_category': 'Content Access',
-                            'event_label': 'Bonus: ' + bonusLabel,
-                            'value': e.target.href
-                        });
-                    }
-                    // Clic sur les liens de contact (email/whatsapp)
-                    else if (e.target.matches('.contact-links a')) {
-                        let contactLabel = e.target.textContent.trim();
-                        gtag('event', 'contact_support_access_page', {
-                            'event_category': 'Support',
-                            'event_label': 'Contact Link: ' + contactLabel,
-                            'value': e.target.href
-                        });
-                    }
-                    // Clic sur les liens du Footer (excluant les liens vides '#')
-                    else if (e.target.matches('footer a') && e.target.getAttribute('href') &&
-                        e.target.getAttribute('href') !== '#') {
-                        gtag('event', 'clic_lien_footer_access_page', {
-                            'event_category': 'Navigation',
-                            'event_label': 'Footer Link Access Page: ' + e.target.textContent.trim(),
-                            'value': e.target.href
-                        });
-                    }
-                });
-            }); // Fin de DOMContentLoaded pour Observer et Clicks
-        } else {
-            console.error('GA4 gtag function not found. Ensure GA4 is loaded correctly in <head>.');
-        }
-    </script>
+    
 </body>
 </html>
-
